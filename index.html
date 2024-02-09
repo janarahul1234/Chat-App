@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======== Remix Icon ======== -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+
+    <!-- ======== Style ======== -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ======== Title ======== -->
+    <title>Chat App</title>
+</head>
+
+<body>
+    <section class="chat-section">
+        <div class="brand">
+            Chat App
+        </div>
+
+        <div class="message-area"></div>
+
+        <div class="message-box">
+            <form class="message-box__from">
+                <textarea id="message_input" rows="1" cols="30" class="message-box__input" placeholder="Write a message..."></textarea>
+
+                <button type="submit" id="send-button" class="message-box__send-button">
+                    <i class="ri-send-plane-2-fill"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ======== Socket.io ======== -->
+    <script src="./socket.io/socket.io.js"></script>
+
+    <!-- ======== Script ======== -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
